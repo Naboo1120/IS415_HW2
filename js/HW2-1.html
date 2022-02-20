@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script>
+    var firstNumber; //first number entered
+    var secondNumber; //second number entered
+    var thirdNumber; // third number entered
+    var num1;
+    var num2;
+    var num3;
+    var sum;// sum of all three numbers
+    var product //product of all 3 numbers
+
+    firstNumber = window.prompt("Enter the first integer","0"); //will read the input from the user and store
+    secondNumber = window.prompt("Enter the second integer","0");
+    thirdNumber = window.prompt("Enter the third integer","0");
+
+    //convert stings to int
+    num1 = parseInt(firstNumber);
+    num2 = parseInt(secondNumber);
+    num3 = parseInt(thirdNumber);
+
+    //Calculation of the numbers
+    sum = num1+num2+num3;
+    product = num1*num2*num3;
+
+    //Display the results
+    document.writeln("<h1>The sum is "+ sum +"</h1>");
+    document.writeln("<h1>The product is "+ product +"</h1>");
+  </script>
+
+</head>
+<body>
+
+
+
+</body>
+</html>
