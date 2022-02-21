@@ -2,9 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hello</title>
+  <title>Sales In Chicago and New York</title>
 </head>
 <body>
+
+<script>
+      //Variables
+      let sales, customers, salesPerCustomer;
+      totalSales = 0;
+      totalCustomers = 0;
+      totalSalesPerCustomer = 0;
+
+      let input1, input2;
+      //Window Prompts
+     input1 = window.prompt("Enter sales in Chicago: $", "0");
+     input2 = window.prompt("Enter the number of customers in Chicago:", "0");
+
+     //Chicago Inputs
+      sales = parseInt(input1);
+      customers = parseInt(input2);
+      //adding onto total
+      totalSales = totalSales+sales;
+      totalCustomers = totalCustomers+customers;
+
+
+     //Chicago Calc
+      salesPerCustomer = sales/customers;
+      salesPerCustomer = salesPerCustomer.toFixed(2);
+      salesPerCustomer = Number(salesPerCustomer).toLocaleString();
+
+     //Display of Chicago
+     document.writeln("<P>Sales in Chicago: $" + sales + "<BR> The number of customers in Chicago: " + customers + "<BR>Sales per customer in Chicago: " + salesPerCustomer);
+
+
+      //Window Prompts
+      input1 = window.prompt("Enter sales in New York: $", "0");
+      input2 = window.prompt("Enter the number of customers in New York:", "0");
+
+      //New York Inputs
+      sales = parseInt(input1);
+      customers = parseInt(input2);
+      //adding onto total
+      totalSales = totalSales+sales;
+      totalCustomers = totalCustomers+customers;
+
+      //New York Calc
+      salesPerCustomer = sales/customers;
+      salesPerCustomer = salesPerCustomer.toFixed(2);
+      salesPerCustomer = Number(salesPerCustomer).toLocaleString();
+
+      //Display of NY stats
+      document.writeln("<P>Sales in New York: $" + sales + "<BR> The number of customers in New York: " + customers + "<BR>Sales per customer in New York: " + salesPerCustomer);
+
+     //Filling in the totals, formatting
+      totalSalesPerCustomer = totalSales/totalCustomers;
+      totalSalesPerCustomer = totalSalesPerCustomer.toFixed(2);
+      totalSalesPerCustomer = Number(totalSalesPerCustomer).toLocaleString();
+
+      //Display of US stats
+      document.writeln("<P>Sales in US: $" + totalSales + "<BR> The number of customers in US: " + totalCustomers + "<BR>Sales per customer in US: " + totalSalesPerCustomer);
+
+</script>
+
+<p>Click Refresh (or Reload) to run the script again</p>
 
 </body>
 </html>
